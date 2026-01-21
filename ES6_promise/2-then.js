@@ -1,12 +1,10 @@
 /*eslint-disable*/
 
 export default function handleRespondeFromAPI(promise){
-    return promise
+  return promise
     .then(() => {
-return { stauts:200, body :"success"};
-
-
-    })
+  return { status: 200, body: "success"};
+  })
     .catch ((err) => {
         return new Error();
     })

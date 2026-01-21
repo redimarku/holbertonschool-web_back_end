@@ -3,7 +3,7 @@
 export default function handleRespondeFromAPI(promise){
     return promise
     .then(() => {
-return { stauts:200, bodu :"success"};
+return { stauts:200, body :"success"};
 
 
     })
@@ -12,6 +12,6 @@ return { stauts:200, bodu :"success"};
     })
 
     .finally (() => {
-        console.log("Got a response from API");
-    })
+        console.log("Got a response from the API");
+    });
 }

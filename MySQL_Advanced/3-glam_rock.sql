@@ -1,6 +1,6 @@
 -- script to list all databases
 SELECT band_name,
-       IFNULL(split, 2023) - formed + 1 AS lifespan
+       COALESCE(split, 2023) - formed + 1 AS lifespan
 FROM metal_bands
 WHERE style LIKE '%Glam rock%'
 ORDER BY lifespan DESC;

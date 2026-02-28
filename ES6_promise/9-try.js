@@ -3,10 +3,15 @@ const queue = [];
 let result;
     try{
        result  = mathFunction();
+      queue.push(result, 'Guardrail was processed');
+       return queue;
     } catch(error){
         result = error.toString();
+        queue.push(result, 'Guardrail was processed');
+         return queue;
+
     }
-    queue.push(result);
-    queue.push('Guardrail was processed');
-    return queue;
+    
+    
+   
 }

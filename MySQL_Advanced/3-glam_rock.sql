@@ -1,5 +1,5 @@
 -- script to list all databases
-SELECT band_name,
+SELECT band_name, lifespan,
        IFNULL(split, YEAR(CURDATE())) - formed + 1 AS lifespan
 FROM metal_bands
 WHERE style LIKE '%Glam rock%'
